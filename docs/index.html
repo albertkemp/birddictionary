@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bird Dictionary</title>
+<link rel="shortcut icon" href="images/falcon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@300&display=swap" rel="stylesheet">  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+</style>
+</head>
+<body>
+
+
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Filter pages.." title="Type in a name">
+
+<ul id="myUL">
+  <li><a href="abbot'sbooby.html">Abbot's Booby</a></li>
+  <li><a href="albert'slyrebird.html">Albert's Lyrebird</a></li>
+  <li><a href="abyssiniangroundthrush.html">Abyssinian Ground-thrush</a></li>
+  <li><a href="adeliepenguin.html">Adelie Penguin</a></li>
+  <li><a href="africancuckoo.html">African Cuckoo</a></li>
+  <li><a href="africanfirefinch.html">African Firefinch</a></li>
+  <li><a href="africanhawkeagle.html">African Hawk-eagle</a></li>
+  <li><a href="baldeagle.html">Bald Eagle</a></li>
+  <li><a href="balimyna.html">Bali Myna</a></li>
+  <li><a href="baltimoreoriole.html">Baltimore Oriole</a></li>
+  <li><a href="bandedkingfisher.html">Banded Kingfisher</a></li>
+  <li><a href="commoncuckoo.html">Common Cuckoo</a></li>
+  <li><a href="canadagoose.html">Canada Goose</a></li>
+  <li><a href="cactuswren.html">Cactus Wren</a></li>
+  <li><a href="californiacondor.html">California Condor</a></li>
+  <li><a href="californiagull.html">California Gull</a></li>
+  <li><a href="dark-eyedjunco.html">Dark-eyed Junco</a></li>
+  <li><a href="darter.html">Darter</a></li>
+  <li><a href="deadseasparrow.html">Dead Sea Sparrow</a></li>
+  <li><a href="desertfinch.html">Desert Finch</a></li>
+  <li><a href="eagleowl.html">Eagle Owl</a></li>
+  <li><a href="earedpitta.html">Eared Pitta</a></li>
+  <li><a href="easternspinebill.html">Eastern Spinebill</a></li>
+  <li><a href="fairyprion.html">Fairy Prion</a></li>
+  <li><a href="fairymartin.html">Fairy Martin</a></li>
+  <li><a href="fairytern.html">Fairy Tern</a></li>
+  <li><a href="fan-tailedcuckoo.html">Fan-tailed Cuckoo</a></li>
+  <li><a href="galah.html">Galah</a></li>
+  <li><a href="galapagosdove.html">Galapagos Dove</a></li>
+  <li><a href="galapagoshawk.html">Galapagos Hawk</a></li>
+  <li><a href="galapagospenguin.html">Galapagos Penguin</a></li>
+  <li><a href="hall'sbabbler.html">Halls Babbler</a></li>
+  <li><a href="ibisbill.html">Ibisbill</a></li>
+  <li><a href="icelandgull.html">Iceland Gull</a></li>
+  <li><a href="black-neckedstork.html">Jabiru</a></li>
+  <li><a href="jackywinter.html">Jacky Winter</a></li>
+  <li><a href="kaka.html">Kaka</a></li>
+  <li><a href="kea.html">Kea</a></li>
+  <li><a href="kakapo.html">Kakapo</a></li>
+  <li><a href="kalkadoongrasswren.html">Kalkadoon Grasswren</a></li>
+  <li><a href="koribustard.html">Kori Bustard</a></li>
+  <li><a href="lacedwoodpecker.html">Laced Woodpecker</a></li>
+  <li><a href="ladder-tailednightjar.html">Ladder-tailed Nightjar</a></li>
+  <li><a href="macaronipenguin.html">Macaroni Penguin</a></li>
+  <li><a href="madagascarbaza.html">Madagascar Baza</a></li>
+  <li><a href="madagascarcoucal.html">Madagascar Coucal</a></li>
+  <li><a href="nankeenkestrel.html">Nankeen Kestrel</a></li>
+  <li><a href="newcaledoniancrow.html">New Caledonian Crow</a></li>
+  <li><a href="newcaledonianwhite-eye.html">New Caledonian White-eye</a></li>
+  <li><a href="ostrich.html">Ostrich</a></li>
+  <li><a href="occelatedquail.html">Ocellated Quail</a></li>
+  <li><a href="ochre-breastedtanager.html">Ochre-breasted Tanager</a></li>
+  <li><a href="oilbird.html">Oilbird</a></li>
+  <li><a href="pacificbaza.html">Pacific Baza</a></li>
+  <li><a href="pacificgull.html">Pacific Gull</a></li>
+  <li><a href="paint-billedcrake.html">Paint-billed Crake</a></li>
+  <li><a href="quailplover.html">Quail-plover</a></li>
+  <li><a href="queenvictoriariflebird.html">Queen Victoria Riflebird</a></li>
+  <li><a href="quebrachocrestedtinamou.html">Quebracho Crested-tinamou</a></li>
+  <li><a href="radjahshelduck.html">Radjah Shelduck</a></li>
+  <li><a href="rainquail.html">Rain Quail</a></li>
+  <li><a href="rainbowlorikeet.html">Rainbow Lorikeet</a></li>
+  <li><a href="sabine'sgull.html">Sabine's Gull</a></li>
+  <li><a href="saddle-billedstork.html">Saddle-billed Stork</a></li>
+  <li><a href="saffronfinch.html">Saffron Finch</a></li>
+  <li><a href="tahitiflycatcher.html">Tahiti Flycatcher</a></li>
+  <li><a href="takahe.html">Takahe</a></li>
+  <li><a href="tanagerfinch.html">Tanager Finch</a></li>
+  <li><a href="ugundawoodlandwarbler.html">Ugunda Woodland Warbler</a></li>
+  <li><a href="ultramarinegrosbeak.html">Ultramarine Grosbeak</a></li>
+  <li><a href="unadornedflycatcher.html">Unadorned Flycatcher</a></li>
+  <li><a href="vanikoroflycatcher.html">Vanikoro Flycatcher</a></li>
+  <li><a href="variableindigobird.html">Variable Indigobird</a></li>
+  <li><a href="variablekingfisher.html">Variable Kingfisher</a></li>
+  <li><a href="waggler'smacaw.html">Waggler's Macaw</a></li>
+  <li><a href="wanderingalbatross.html">Wandering Albatross</a></li>
+  <li><a href="wedge-tailedshearwater.html">Wedge-tailed Shearwater</a></li>
+  <li><a href="xantus'shummingbird.html">Xantus's Hummingbird</a></li>
+  <li><a href="xavier'sgreenbul.html">Xavier's Greenbul</a></li>
+  <li><a href="yellowhoneyeater.html">Yellow Honeyeater</a></li>
+  <li><a href="yapwhite-eye.html">Yap White-eye</a></li>
+  <li><a href="yellowwattlebird.html">Yellow Wattlebird</a></li>
+  <li><a href="zittingcisticola.html">Zitting Cisticola</a></li>
+  <li><a href="zebrafinch.html">Zebra Finch</a></li>
+  <li><a href="zigzagheron.html">Zigzag Heron</a></li>
+  
+</ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+</body>
+</html>
